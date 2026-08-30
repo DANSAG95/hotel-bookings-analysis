@@ -148,27 +148,23 @@ The analysis includes:
 
 The complete SQL analysis is available in the [`SQL`](SQL/) folder, with individual queries organized by question.
 
-## Data Preparation
+## Data Limitations
 
-The dataset was imported into Power BI and reviewed in Power Query to verify data types and identify fields requiring transformation.
+Several limitations should be considered when interpreting the analysis:
 
-Key preparation steps included:
+* The dataset contains **booking-level records but no customer identifier**, so individual customers cannot be tracked across multiple bookings.
+  
+* The dataset contains both **reservation_status** and **is_canceled**, which show a small discrepancy in cancellation counts. **is_canceled** was used as the operational cancellation indicator throughout the analysis for consistency.
+  
+* ADR represents the Average Daily Rate recorded for a booking. It should not be interpreted as total revenue, profit, or necessarily the final amount paid by the guest.
+  
+* Some categorical fields contain **Undefined** values. These were treated carefully rather than automatically interpreted as meaningful business categories.
+  
+* Some extreme ADR observations were identified and excluded from relevant pricing visualisations when they materially distorted the analysis.
+  
+* The dataset covers **2024 only**, so the analysis cannot be used to identify year-over-year trends or long-term seasonality.
+  
 
-* Converting `adr` to a fixed decimal number.
-  
-* Converting `reservation_status_date` from Date/Time to Date.
-  
-* Creating a dedicated date table in Power BI using DAX.
-  
-* Creating a `Hotel Type` classification from the `hotel` field to distinguish City Hotels and Resort Hotels.
-  
-* Creating a `Total Stay Nights` field by combining weekday and weekend nights.
-  
-* Creating calculated measures for key metrics such as total bookings, total cancellations, cancellation rate, repeated guest rate, average stay length, and ADR.
-  
-* Using Field Parameters and Bookmark navigation to create dynamic dashboard visualisations.
-
-The dataset was also reviewed for anomalous values and inconsistencies. Extreme ADR values were excluded from relevant pricing visualisations where they materially distorted the analysis, while the underlying dataset was kept unchanged.
 
 
 
