@@ -1,3 +1,14 @@
+
+<p align="center">
+  <!-- Tarjeta de Proyecto: Hotel Bookings Analysis -->
+  <a href="https://github.com">
+    <img src="https://github.com/user-attachments/assets/940de5fd-9813-483b-99ea-a8426ed2bd9f" alt="Hotel Bookings Analysis Dashboard" width="48%" />
+  </a>
+</p>
+
+
+
+
 # Hotel Bookings Analysis
 
 ## Project Overview
@@ -121,6 +132,37 @@ Investigates differences between repeated and non-repeated guests, including boo
 Analyses Average Daily Rate across multiple parameters including ADR trends over time and its relationship with cancellation behaviour.
 
 ![Pricing & ADR Analysis](Images/pricing_adr_analysis.png)
+
+## SQL Analysis
+
+SQL was used to explore the dataset and answer the main analytical questions before building the Power BI report.
+
+The analysis includes:
+
+* Overall booking performance
+  
+* Cancellation patterns by customer type and market segment
+  
+* Booking volume and cancellations by country
+  
+* Cancellation behaviour by lead time
+  
+* ADR by customer type, hotel type, and room type
+  
+* Repeated vs non-repeated guest behaviour
+  
+* Bookings and ADR by distribution channel and market segment
+  
+* The relationship between ADR and cancellations
+  
+* Cancellation behaviour by deposit type
+
+The complete SQL analysis is available in the [`SQL`](SQL/) folder, with individual queries organized by question.
+
+
+
+
+
 
 
 
