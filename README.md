@@ -1,14 +1,3 @@
-
-<p align="center">
-  <!-- Tarjeta de Proyecto: Hotel Bookings Analysis -->
-  <a href="https://github.com">
-    <img src="https://github.com/user-attachments/assets/940de5fd-9813-483b-99ea-a8426ed2bd9f" alt="Hotel Bookings Analysis Dashboard" width="48%" />
-  </a>
-</p>
-
-
-
-
 # Hotel Bookings Analysis
 
 ## Project Overview
@@ -158,6 +147,29 @@ The analysis includes:
 * Cancellation behaviour by deposit type
 
 The complete SQL analysis is available in the [`SQL`](SQL/) folder, with individual queries organized by question.
+
+## Data Preparation
+
+The dataset was imported into Power BI and reviewed in Power Query to verify data types and identify fields requiring transformation.
+
+Key preparation steps included:
+
+* Converting `adr` to a fixed decimal number.
+  
+* Converting `reservation_status_date` from Date/Time to Date.
+  
+* Creating a dedicated date table in Power BI using DAX.
+  
+* Creating a `Hotel Type` classification from the `hotel` field to distinguish City Hotels and Resort Hotels.
+  
+* Creating a `Total Stay Nights` field by combining weekday and weekend nights.
+  
+* Creating calculated measures for key metrics such as total bookings, total cancellations, cancellation rate, repeated guest rate, average stay length, and ADR.
+  
+* Using Field Parameters and Bookmark navigation to create dynamic dashboard visualisations.
+
+The dataset was also reviewed for anomalous values and inconsistencies. Extreme ADR values were excluded from relevant pricing visualisations where they materially distorted the analysis, while the underlying dataset was kept unchanged.
+
 
 
 
