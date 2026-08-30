@@ -26,6 +26,9 @@ The analysis focuses on the following questions:
    
 7. Are there observable relationships between ADR and cancellation behaviour?
 
+8. How do booking changes vary across customer types?
+
+
 ## Key Insights
 
 ### Booking Overview
@@ -34,7 +37,7 @@ The analysis focuses on the following questions:
   
 * **Online Travel Agencies (Online TA)** are the largest market segment, accounting for approximately 54.5K bookings.
   
-* **Travel Agencies/Travel Operator (TA/TO) is the dominant distribution channel**, with approximately 97.9K bookings.
+* **Travel Agencies/Travel Operator (TA/TO) are the dominant distribution channel**, with approximately 97.9K bookings.
   
 * Booking volume remained **remarkably stable throughout 2024**, ranging from approximately 9.6K bookings in February to 10.3K in October, with no strong seasonal pattern.
   
@@ -94,6 +97,8 @@ The analysis focuses on the following questions:
   
 * ADR varies more across booking characteristics than across time or cities. For example, ADR ranges from approximately **$76.21 to $105.50 across deposit types** and from approximately **$87.67 to $108.71 across customer types**.
 
+* **Higher ADR is generally associated with higher cancellation rates, but this does not mean that higher ADR causes more cancellations.**
+
 ## Power BI Dashboard
 
 The Power BI report consists of four pages:
@@ -148,6 +153,29 @@ The analysis includes:
 
 The complete SQL analysis is available in the [`SQL`](SQL/) folder, with individual queries organized by question.
 
+## Data Preparation
+
+The dataset was imported into Power BI and reviewed in Power Query to verify data types and identify fields requiring transformation.
+
+Key preparation steps included:
+
+* Converting ADR to a fixed decimal number.
+  
+* Converting reservation_status_date from Date/Time to Date.
+
+* Creating a dedicated date table in Power BI using DAX.
+  
+* Creating a Hotel Type classification from the hotel field to distinguish City Hotels and Resort Hotels.
+  
+* Creating a Total Stay Nights field by combining weekday and weekend nights.
+  
+* Creating calculated measures for key metrics.
+  
+* Using Field Parameters and Bookmark navigation to create dynamic dashboard visualisations.
+
+The dataset was also reviewed for anomalous values and inconsistencies. Extreme ADR values were excluded from relevant pricing visualisations where they materially distorted the analysis, while the underlying dataset was kept unchanged.
+
+
 ## Data Limitations
 
 Several limitations should be considered when interpreting the analysis:
@@ -160,18 +188,7 @@ Several limitations should be considered when interpreting the analysis:
   
 * Some categorical fields contain **Undefined** values. These were treated carefully rather than automatically interpreted as meaningful business categories.
   
-* Some extreme ADR observations were identified and excluded from relevant pricing visualisations when they materially distorted the analysis.
-  
 * The dataset covers **2024 only**, so the analysis cannot be used to identify year-over-year trends or long-term seasonality.
-  
-
-
-
-
-
-
-
-
 
 
 
