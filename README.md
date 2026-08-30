@@ -20,7 +20,7 @@ The analysis focuses on the following questions:
    
 4. How do repeated and non-repeated guests differ in their booking behaviour?
    
-5. How does ADR (Average Daily Rate) vary across hotel types, room types, cities, market segments, deposit types, and distribution channels?
+5. How does ADR vary across hotel types, room types, cities, market segments, deposit types, and distribution channels?
    
 6. How does ADR evolve over time, and are there meaningful differences between weekday and weekend rates?
    
