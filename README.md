@@ -94,6 +94,35 @@ The analysis focuses on the following questions:
   
 * ADR varies more across booking characteristics than across time or cities. For example, ADR ranges from approximately **$76.21 to $105.50 across deposit types** and from approximately **$87.67 to $108.71 across customer types**.
 
+## Power BI Dashboard
+
+The Power BI report consists of four pages:
+
+### 1. Booking Overview
+
+Provides an overview of booking volume across cities, hotels, hotel types, market segments, and distribution channels, with booking trends throughout 2024.
+
+![Booking Overview](Images/booking_overview.png)
+
+### 2. Cancellation Analysis
+
+Examines cancellation rates across customer types, market segments, distribution channels, hotel types, and room types, including the relationship between lead time and cancellation behaviour.
+
+![Cancellation Analysis](Images/cancellation_analysis.png)
+
+### 3. Customer & Booking Behaviour
+
+Explores differences between repeated and non-repeated guests, including booking behaviour, stay length, lead time, special requests, cancellation rates, ADR, customer types, and meal preferences.
+
+![Customer & Booking Behaviour](Images/customer_booking_behaviour.png)
+
+### 4. Pricing & ADR Analysis
+
+Analyzes Average Daily Rate across hotel types, room types, cities, market segments, deposit types, distribution channels, and customer types, including ADR trends over time and its relationship with cancellation behaviour.
+
+![Pricing & ADR Analysis](Images/pricing_adr_analysis.png)
+
+
 
 
 
