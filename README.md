@@ -4,7 +4,7 @@
 
 The goal of this project is to analyse hotel booking data to identify patterns in volume, cancellations and guest behaviour.
 
-The analysis was developed using SQL queries and Power BI, combining data exploration and  a interactive dashboard.
+The analysis was developed using SQL queries and Power BI, combining data exploration with an interactive dashboard.
 
 ## Business Questions
 
