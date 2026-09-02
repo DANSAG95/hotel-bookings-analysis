@@ -31,7 +31,7 @@ The analysis focuses on the following questions:
 
 ### Booking Overview
 
-* **City Hotels account for the majority of bookings**, with approximately 78.3K bookings compared with 40.1K for Resort Hotels.
+* **City Hotels represent the majority of bookings**, with approximately 78.3K bookings compared with 40.1K for Resort Hotels.
   
 * **Online Travel Agencies (Online TA)** are the largest market segment, accounting for approximately 54.5K bookings.
   
@@ -79,7 +79,7 @@ The analysis focuses on the following questions:
   
 * Transient-Party customers show the highest average number of booking changes, at approximately **0.35 per booking**.
 
-### Pricing & ADR
+### Pricing & ADR (Average Daily Rate)
 
 * The overall **Average Daily Rate is $103.49**.
   
@@ -115,7 +115,7 @@ Explores cancellation rates across multiple variables, including the relationshi
 
 ### 3. Customer & Booking Behaviour
 
-Investigates differences between repeated and non-repeated guests, including booking behaviour and meal preferences.
+Delves into the differences between repeated and non-repeated guests, including booking behaviour and meal preferences.
 
 ![Customer & Booking Behaviour](Images/customer_booking_behaviour.png)
 
