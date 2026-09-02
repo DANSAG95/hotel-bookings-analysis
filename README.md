@@ -2,11 +2,9 @@
 
 ## Project Overview
 
-This project analyses hotel booking data to identify patterns in booking volume, cancellations, guest behaviour, and Average Daily Rate (ADR).
+The goal of this project is to analyse hotel booking data to identify patterns in volume, cancellations and guest behaviour.
 
-The analysis was developed using SQL and Power BI, combining data exploration, analytical queries and interactive dashboard design.
-
-The objective is to understand the main factors associated with hotel bookings and cancellations.
+The analysis was developed using SQL queries and Power BI, combining data exploration and  a interactive dashboard.
 
 ## Business Questions
 
