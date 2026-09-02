@@ -127,7 +127,7 @@ Analyses Average Daily Rate across multiple parameters including ADR trends over
 
 ## SQL Analysis
 
-SQL was used to explore the dataset and answer the main analytical questions before building the Power BI report.
+SQL was used to explore the dataset and answer the main questions before building the Power BI report.
 
 The analysis includes:
 
@@ -171,8 +171,6 @@ Key preparation steps included:
   
 * Using Field Parameters and Bookmark navigation to create dynamic dashboard visualisations.
 
-The dataset was also reviewed for anomalous values and inconsistencies. Extreme ADR values were excluded from relevant pricing visualisations where they materially distorted the analysis, while the underlying dataset was kept unchanged.
-
 
 ## Data Limitations
 
@@ -180,11 +178,9 @@ Several limitations should be considered when interpreting the analysis:
 
 * The dataset contains **booking-level records but no customer identifier**, so individual customers cannot be tracked across multiple bookings.
   
-* The dataset contains both **reservation_status** and **is_canceled**, which show a small discrepancy in cancellation counts. **is_canceled** was used as the operational cancellation indicator throughout the analysis for consistency.
+* The dataset contains both **reservation_status** and **is_canceled**, which show a small discrepancy in cancellation counts. **is_canceled** was used as the cancellation indicator throughout the analysis for consistency.
   
-* ADR represents the Average Daily Rate recorded for a booking. It should not be interpreted as total revenue, profit, or necessarily the final amount paid by the guest.
-  
-* Some categorical fields contain **Undefined** values. These were treated carefully rather than automatically interpreted as meaningful business categories.
+* Some categorical fields contain **Undefined** values. Some examples were Market segments and distribution channels.
   
 * The dataset covers **2024 only**, so the analysis cannot be used to identify year-over-year trends or long-term seasonality.
 
