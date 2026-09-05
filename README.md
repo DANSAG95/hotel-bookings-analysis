@@ -1,7 +1,5 @@
 # Hotel Bookings Analysis
 
-## Project Overview
-
 This project focuses on the analysis of hotel booking data to identify patterns in volume, cancellations, and guest behaviour.
 
 It has 2 parts:
